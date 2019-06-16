@@ -7,34 +7,34 @@ trinket::trinket() {
 
 }
 
-getPrice::trinket() {
+int trinket::getPrice() {
 	return price;
 }
 
-getTicket::trinket() {
+bool trinket::getTrinket() {
 	if (stock > 0) {
-		return true;
 		stock = stock - 1;
-		std::cout << "Update stock: " << stock << std::endl;
+		std::cout << stock << std::endl;
+		return true;
 	}
 	return false;
 }
 
-getDescription::plushlion() {
+std::string plushlion::getDescription() {
 	std::string description("If you want to cuddle, these soft lions are the ones to go for!");
 	return description;
 }
 
-getDescription::macawkeyring() {
+std::string macawkeyring::getDescription() {
 	std::string description("Remember your zoological adventure with these text based keyrings.");
 	return description;
 }
 
-getDescription::stingray() {
+int stingrayglobe::getPrice() {
 	return (price * 3);
 }
 
-getDescription::stingray() {
+std::string stingrayglobe::getDescription() {
 	std::string description("Shake me and let the snow fall onto this aquatic dreamland.");
 	return description;
 }
